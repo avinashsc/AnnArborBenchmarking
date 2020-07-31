@@ -40,7 +40,7 @@
 <!-- County Map Section -->
   <div class='w3-container w3-light-grey' style='padding:128px 16px' id='viz1595528313546' style='position: relative'>
       <noscript>
-        <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;Map2&#47;1_rss.png' style='border: none' /></a>
+        <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;Map2&#47;1_rss.png' style='border: none' /></a> 
       </noscript>
       <div class="bodyTextTitle">
 
@@ -52,8 +52,6 @@
         There are many similarities to Ann Arbor, but when comparing available services and city policy, it is helpful to remember that Austin (Travis county) is eight times larger than Ann Arbor. Where possible, the data have been normalized for population.</p>
         <br>
       </div>
-
-
 
       <object class='tableauViz'  style='display:none;'>
         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
@@ -70,9 +68,9 @@
         <param name='display_count' value='yes' />
         <param name='language' value='en' />
       </object>
+
       <span class="w3-medium">
-<br>
-        <p><a href="./#viz1596047867496" class="w3-button w3-black">NEXT CHART &gt; Population Movement Summary</a></p>
+        <div class="w3-center w3-medium"><p><a href="./#viz1596047867496" class="w3-button w3-black">NEXT CHART &gt; Population Movement Summary</a></p></div>
   </div>
     <script type='text/javascript'>
       var divElement = document.getElementById('viz1595528313546');
@@ -93,13 +91,14 @@
       vizElement.style.height=Math.round(0.95*getHeight())+'px';
       vizElement.style.marginLeft='auto';
       vizElement.style.marginRight='auto';
+      vizElement.style.display='block';
       var scriptElement = document.createElement('script');
       scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
       vizElement.parentNode.insertBefore(scriptElement, vizElement);
   </script>
 
 <!-- Population Movement -->
-  <div class='w3-container w3-light-grey' style='padding:128px 16px' id='viz1596047867496' style='position: relative'>
+  <div class='w3-container w3-cell-middle w3-light-grey' style='padding:128px 16px' id='viz1596047867496' style='position: relative'>
     <div class="bodyTextTitle">
       <h2>Where you headed? A look at population movement</h2>
       <br>
@@ -113,8 +112,8 @@
       <p>To be considered an important hub, the Ann Arbor region must be attractive to outside talent. Net population movement, both inter as well as intrastate, can potentially indicate the attractiveness of a region to outside talent, especially when viewed as proportional to the population.</p>
       <br>
     </div>
-
-      <noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;PopMov-Migration&#47;1_rss.png' style='border: none' /></a>
+      <noscript>
+        <div class="w3-center"><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;PopMov-Migration&#47;1_rss.png' style='border: none' /></a></div>
       </noscript>
       <object class='tableauViz'  style='display:none;'>
         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
@@ -131,8 +130,9 @@
           <param name='display_count' value='yes' />
           <param name='language' value='en' />
         </object>
-      <span class="w3-medium">
-      <p><a href="./#viz1596050543966" class="w3-button w3-black">NEXT CHART &gt; Deep-dive of population movement</a></p>
+      <p>
+      <span class="w3-center w3-medium">
+        <div class="w3-center w3-medium"><p><a href="./#viz1596050543966" class="w3-button w3-black">NEXT CHART &gt; Deep-dive of population movement</a></p></div>
   </div>
     <script type='text/javascript'>
       var divElement = document.getElementById('viz1596047867496');
@@ -162,24 +162,14 @@
       <br>
     </div>
     <div class="bodyText">
-      <h4><strong>Interstate:</strong></h4>
-      <p>
+      <strong>Interstate:</strong>
         These are people moving from one state and/or county to another state. The differential tracks the net movement i.e. people moving into one state minus the people moving out <br>
-      </p>
-      <h4><strong>Intrastate:</strong></h4>
-      <p>
+      <strong>Intrastate:</strong>
         These are people moving within the same state but to a different county. The differential tracks the net movement i.e. people moving into one county from another within the same state <br>
-      </p>
-      <h4><strong>Abroad:</strong></h4>
-      <p>
-        These are people moving into a state/county from abroad<br>
-      </p>
-      <h4><strong>Net Migration:</strong></h4>
-      <p>
-        <u><strong>Interstate differential + Intrastate differential + Movers from Abroad</u></strong>. <br>This tracks the net movement i.e. inflow - outflow across these different categories. <br>Washtenaw, MI county draws more people from within the state while sees far fewer people migrating into the county from out of state. It also has a moderate amount of people moving from abroad making it overall an attractive county to move into.</p>
-
-      </p>
-      <br>
+      <strong>Abroad:</strong>
+        These are people moving into a state/county from abroad<br> <br>
+      <strong>Net Migration:</strong>
+        <u><strong>Interstate differential + Intrastate differential + Movers from Abroad</u></strong> <br> <br> 
     </div>
 
       <noscript>
@@ -200,9 +190,11 @@
         <param name='display_count' value='yes' />
         <param name='language' value='en' />
       </object>
+
       <span class="w3-medium">
-      <p><a href="./#viz1596047996388" class="w3-button w3-black">NEXT CHART &gt; Net-Migration Trends</a></p>
+      <div class="w3-center w3-medium"><p><a href="./#viz1596047996388" class="w3-button w3-black">NEXT CHART &gt; Net-Migration Trends</a></p></div>
   </div>
+
     <script type='text/javascript'>
       var divElement = document.getElementById('viz1596050543966');
       var vizElement = divElement.getElementsByTagName('object')[0];
@@ -254,7 +246,7 @@
         <param name='language' value='en' />
       </object>
       <span class="w3-medium">
-      <p><a href="./#viz1595529331270" class="w3-button w3-black">NEXT CHART &gt; Driving Industry Employment</a></p>
+      <div class="w3-center w3-medium"><p><a href="./#viz1595529331270" class="w3-button w3-black">NEXT CHART &gt; Driving Industry Employment</a></p></div>
   </div>
     <script type='text/javascript'>
       var divElement = document.getElementById('viz1596047996388');
@@ -310,7 +302,7 @@
         <param name='language' value='en' />
       </object>
       <span class="w3-medium">
-      <p><a href="./#viz1595529554451" class="w3-button w3-black">NEXT CHART &gt; Housing Affordability</a></p>
+      <div class="w3-center w3-medium"><p><a href="./#viz1595529554451" class="w3-button w3-black">NEXT CHART &gt; Housing Affordability</a></p></div>
   </div>
     <script type='text/javascript'>
     var divElement = document.getElementById('viz1595529331270');
@@ -366,7 +358,7 @@
         <param name='language' value='en' />
       </object>
       <span class="w3-medium">
-      <p><a href="./#viz1595529687495" class="w3-button w3-black">NEXT CHART &gt; Combined Labor Snapshot</a></p>
+      <div class="w3-center w3-medium"><p><a href="./#viz1595529687495" class="w3-button w3-black">NEXT CHART &gt; Combined Labor Snapshot</a></p></div>
   </div>
     <script type='text/javascript'>
     var divElement = document.getElementById('viz1595529554451');
@@ -422,7 +414,7 @@
         <param name='language' value='en' />
     </object>
       <span class="w3-medium">
-      <p><a href="./#viz1595529725241" class="w3-button w3-black">NEXT CHART &gt; Labor Market Trends</a></p>
+      <div class="w3-center w3-medium"><p><a href="./#viz1595529725241" class="w3-button w3-black">NEXT CHART &gt; Labor Market Trends</a></p></div>
   </div>
   <script type='text/javascript'>
     var divElement = document.getElementById('viz1595529687495');
@@ -474,7 +466,9 @@
 
     </div>
       <noscript>
+        <div class="w3-center">
         <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;LaborMarketTrends&#47;1_rss.png' style='border: none' /></a>
+        </div>
       </noscript>
       <object class='tableauViz'  style='display:none;'>
         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
@@ -491,12 +485,9 @@
         <param name='language' value='en' />
       </object>
       <span class="w3-medium">
-        <br><br><br><br><br>
-        <p></p>
-        <br><br><br><br><br>
-        <a href="./" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  </div>
-    <script type='text/javascript'>
+      <div class="w3-center w3-medium"><p><a href="./#team" class="w3-button w3-black">NEXT CHART &gt; About US</a></p></div>
+      </div>
+      <script type='text/javascript'>
     var divElement = document.getElementById('viz1595529725241');
     var vizElement = divElement.getElementsByTagName('object')[0];
     function getWidth() {
@@ -517,6 +508,58 @@
      vizElement.parentNode.insertBefore(scriptElement, vizElement);
   </script>
 
+<!-- Who we are -->
+<div class="w3-container w3-white" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">ABOUT US</h3>
+  <p class="w3-center w3-medium">This visualization was created in the summer 2020 term for UC Berkeley Data Science course: w209 Data Visualization.</p>
+  <div class="w3-row-padding w3-grayscale w3-center" style="margin-top:64px; margin-left:auto; width:100%;">
+    <div class="w3-quarter w3-margin-bottom">
+      <div class="w3-card">
+        <img src="data/alex.jpg" alt="Alex" style="width:100%">
+        <div class="w3-container">
+          <h3>Alex West</h3>
+          <p><a href="https://www.linkedin.com/in/alexandralaurenwest/">LinkedIn</a></p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:alexwest@berkeley.edu'"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-quarter w3-margin-bottom">
+      <div class="w3-card">
+        <img src="data/avi.jpg" alt="Avinash" style="width:100%">
+        <div class="w3-container">
+          <h3>Avinash Chandrasekaran</h3>
+          <p><a href="https://www.linkedin.com/in/avinash-chandrasekaran-97b3944/">LinkedIn</a></p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:avinashc@berkeley.edu'"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-quarter w3-margin-bottom">
+      <div class="w3-card">
+        <img src="data/beth.jpg" alt="Bethany" style="width:100%">
+        <div class="w3-container">
+          <h3>Bethany Keller</h3>
+          <p><a href="https://www.linkedin.com/in/bethany-keller-62667b48/">LinkedIn </a></p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:bethany.keller@berkeley.edu'"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-quarter w3-margin-bottom">
+      <div class="w3-card">
+        <img src="data/john.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Boudreaux</h3>
+          <p><a href="https://www.linkedin.com/in/boudreauxjohn/">LinkedIn </a></p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:john.boudreaux@berkeley.edu'"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="./" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  </footer>
 
     <script src="https://d3js.org/d3.v4.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js'></script>
