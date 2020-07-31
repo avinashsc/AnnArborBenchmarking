@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Benchmarking Ann Arbor: w209 Final Project</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    body, html {
+        height: 100%;
+        line-height: 1.8;
+    }
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("data/michstadiummorning1.jpg");
+      min-height: 100%;
+    }
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+    </style>
+  </head>
+  <body>
+
+<!-- Text on the image -->
+<header class="bgimg-1" id="home">
+  <div class="w3-text-white" style="padding:28px">
+    <span class="w3-jumbo">Benchmarking the Ann Arbor Region</span><br>
+    <span class="w3-medium">The goal of this report is to take the pulse of Ann Arbor region in comparison to a specific competitive set of technology-driven communities and their economies.
+     <p><a href="./#viz1595528313546" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Start Exploring</a></p>
+     <p class="w3-text-white w3-tiny"> * Please use Chrome, Firefox and/or Edge for best site experience. Internet Explorer, Safari can have issues rendering some aspects of the charts below</p>
+  </div>
+</header>
+
+<!-- County Map Section -->
+  <div class='w3-container w3-light-grey' style='padding:128px 16px' id='viz1595528313546' style='position: relative'>
+      <noscript>
+        <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;Map2&#47;1_rss.png' style='border: none' /></a>
+      </noscript>
+      <div class="bodyTextTitle">
+
+        <h2>A city, its county, and its competition</h2><br>
+      </div>
+      <div class="bodyText">
+        <p>Ann Arbor, MI is in Washtenaw county. All metrics are compared at the county level.<br><br>
+        Many of the selected regions were chosen due to their inclusion in anecdotal comparisons to the Ann Arbor region. Austin, TX is a perfect example.
+        There are many similarities to Ann Arbor, but when comparing available services and city policy, it is helpful to remember that Austin (Travis county) is eight times larger than Ann Arbor. Where possible, the data have been normalized for population.</p>
+        <br>
+      </div>
+
+
+
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='AnnArborBenchmarking&#47;Map2' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;Map2&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en' />
+      </object>
+      <span class="w3-medium">
+<br>
+        <p><a href="./#viz1596047867496" class="w3-button w3-black">NEXT CHART &gt; Population Movement Summary</a></p>
+  </div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1595528313546');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      // vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+      function getWidth() {
+        return Math.max(
+          document.documentElement.clientWidth
+        );
+      }
+
+      function getHeight() {
+        return Math.max(
+          document.documentElement.clientHeight
+        );
+      }
+      vizElement.style.width=Math.round(0.95*getWidth())+'px';
+      vizElement.style.height=Math.round(0.95*getHeight())+'px';
+      vizElement.style.marginLeft='auto';
+      vizElement.style.marginRight='auto';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+<!-- Population Movement -->
+  <div class='w3-container w3-light-grey' style='padding:128px 16px' id='viz1596047867496' style='position: relative'>
+    <div class="bodyTextTitle">
+      <h2>Where you headed? A look at population movement</h2>
+      <br>
+    </div>
+    <div class="bodyText">
+      <h4><strong>What it is:</strong></h4>
+      <p>These are period estimates that measure where people lived when surveyed (current residence) and where they lived one year prior. The data are collected continously over a five-year period. The flow estimates resemble the annual number of movers between counties for a five-year period. </p>
+      <strong>Source of data</strong>: <a href="https://flowsmapper.geo.census.gov/map.html">US Census Flows Mapper</a>
+      <br>
+      <h4><strong>Why it matters:</strong></h4>
+      <p>To be considered an important hub, the Ann Arbor region must be attractive to outside talent. Net population movement, both inter as well as intrastate, can potentially indicate the attractiveness of a region to outside talent, especially when viewed as proportional to the population.</p>
+      <br>
+    </div>
+
+      <noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;PopMov-Migration&#47;1_rss.png' style='border: none' /></a>
+      </noscript>
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+         <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='AnnArborBenchmarking&#47;PopMov-Migration' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;PopMov-Migration&#47;1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en' />
+        </object>
+      <span class="w3-medium">
+      <p><a href="./#viz1596050543966" class="w3-button w3-black">NEXT CHART &gt; Deep-dive of population movement</a></p>
+  </div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1596047867496');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+          function getWidth() {
+            return Math.max(
+              document.documentElement.clientWidth
+            );
+          }
+
+          function getHeight() {
+            return Math.max(
+              document.documentElement.clientHeight
+            );
+          }
+          vizElement.style.width=Math.round(0.9*getWidth())+'px';
+          vizElement.style.height=Math.round(0.9*getHeight())+'px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+<!-- Population DeepDive -->
+  <div class='w3-container w3-light-grey' style='padding:128px 16px' id='viz1596050543966' style='position: relative'>
+    <div class="bodyTextTitle">
+      <h2>Where are people moving? A deep dive into population movement</h2>
+      <br>
+    </div>
+    <div class="bodyText">
+      <h4><strong>Interstate:</strong></h4>
+      <p>
+        These are people moving from one state and/or county to another state. The differential tracks the net movement i.e. people moving into one state minus the people moving out <br>
+      </p>
+      <h4><strong>Intrastate:</strong></h4>
+      <p>
+        These are people moving within the same state but to a different county. The differential tracks the net movement i.e. people moving into one county from another within the same state <br>
+      </p>
+      <h4><strong>Abroad:</strong></h4>
+      <p>
+        These are people moving into a state/county from abroad<br>
+      </p>
+      <h4><strong>Net Migration:</strong></h4>
+      <p>
+        <u><strong>Interstate differential + Intrastate differential + Movers from Abroad</u></strong>. <br>This tracks the net movement i.e. inflow - outflow across these different categories. <br>Washtenaw, MI county draws more people from within the state while sees far fewer people migrating into the county from out of state. It also has a moderate amount of people moving from abroad making it overall an attractive county to move into.</p>
+
+      </p>
+      <br>
+    </div>
+
+      <noscript>
+        <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;PopMov-differential&#47;1_rss.png' style='border: none' /></a>
+      </noscript>
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='AnnArborBenchmarking&#47;PopMov-differential' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;PopMov-differential&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en' />
+      </object>
+      <span class="w3-medium">
+      <p><a href="./#viz1596047996388" class="w3-button w3-black">NEXT CHART &gt; Net-Migration Trends</a></p>
+  </div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1596050543966');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+          function getWidth() {
+            return Math.max(
+              document.documentElement.clientWidth
+            );
+          }
+
+          function getHeight() {
+            return Math.max(
+              document.documentElement.clientHeight
+            );
+          }
+          vizElement.style.width=Math.round(0.95*getWidth())+'px';
+          vizElement.style.height=Math.round(0.95*getHeight())+'px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+<!-- Net Migration trends -->
+  <div class='w3-container w3-light-grey' style='padding:128px 16px' id='viz1596047996388' style='position: relative'>
+    <div class="bodyTextTitle">
+      <h2>Over the past few years, all roads lead to...</h2>
+      <br>
+    </div>
+    <div class="bodyText">
+      <p>In terms of net migration, Washtenaw county (Ann Arbor region) sees a higher net inflow proportional to its population that most competitor regions.</p>
+      <br>
+    </div>
+
+      <noscript>
+        <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;NetMigration&#47;1_rss.png' style='border: none' /></a>
+      </noscript>
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='AnnArborBenchmarking&#47;NetMigration' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;NetMigration&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en' />
+      </object>
+      <span class="w3-medium">
+      <p><a href="./#viz1595529331270" class="w3-button w3-black">NEXT CHART &gt; Driving Industry Employment</a></p>
+  </div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1596047996388');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+
+      function getWidth() {
+        return Math.max(
+          document.documentElement.clientWidth
+        );
+      }
+
+      function getHeight() {
+        return Math.max(
+          document.documentElement.clientHeight
+        );
+      }
+      //vizElement.style.width=Math.round(0.8*getWidth())+'px';
+      vizElement.style.width=Math.round(0.95*getWidth())+'px';
+      vizElement.style.height=Math.round(0.95*getHeight())+'px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+<!-- Driving Industry Employment -->
+  <div class='w3-container w3-light-grey' style='padding:128px 16px' id='viz1595529331270' style='position: relative'>
+    <div class="bodyTextTitle">
+          <h2>Driving industry (no, not like Uber)</h2><br>
+    </div>
+    <div class="bodyText">
+      <h4><strong>What it is:</strong></h4>
+      <p>The percentage of the total employed population of a region employed in driving industries </p>
+      <br>
+      <h4><strong>Why it matters:</strong></h4>
+      <p>Economies grow and prosper by their ability to make products and deliver services to people and businesses outside their geographic regions i.e. by exporting. Driving industry jobs create and support jobs in other local industries, and propel economic growth.</p>
+      <br>
+    </div>
+
+      <noscript>
+        <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4N&#47;4NHHGSWCN&#47;1_rss.png' style='border: none' /></a>
+      </noscript>
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='path' value='shared&#47;4NHHGSWCN' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4N&#47;4NHHGSWCN&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en' />
+      </object>
+      <span class="w3-medium">
+      <p><a href="./#viz1595529554451" class="w3-button w3-black">NEXT CHART &gt; Housing Affordability</a></p>
+  </div>
+    <script type='text/javascript'>
+    var divElement = document.getElementById('viz1595529331270');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+      function getWidth() {
+        return Math.max(
+          document.documentElement.clientWidth
+        );
+      }
+
+      function getHeight() {
+        return Math.max(
+          document.documentElement.clientHeight
+        );
+      }
+      vizElement.style.width=Math.round(0.95*getWidth())+'px';
+      vizElement.style.height=Math.round(0.95*getHeight())+'px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+<!-- Housing Affordability -->
+  <div class='w3-container w3-light-grey' style='padding:128px 16px' id='viz1595529554451' style='position: relative'>
+    <div class="bodyTextTitle">
+      <h2>A place to (affordably) lay your head</h2><br>
+    </div>
+    <div class="bodyText">
+      <h4><strong>What it is:</strong></h4>
+      <p>This ratio measures affordability by dividing the median home price by the median income</p>
+      <br>
+      <h4><strong>Why it matters:</strong></h4>
+      <p>Housing cost is a key factor influencing quality of life, which affects a region's ability to attract and retain talent. Housing affordability is also a measure of inequality and access to opportunity; if the ratio is high, it can indicate a higly segregated real estate market, and a high level of income inequality. Conversely, it is also an indicator of attractiveness of a housing market.</p>
+      <br>
+    </div>
+
+      <noscript>
+        <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;HousingDB&#47;1_rss.png' style='border: none' /></a>
+      </noscript>
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='AnnArborBenchmarking&#47;HousingDB' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;HousingDB&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en' />
+      </object>
+      <span class="w3-medium">
+      <p><a href="./#viz1595529687495" class="w3-button w3-black">NEXT CHART &gt; Combined Labor Snapshot</a></p>
+  </div>
+    <script type='text/javascript'>
+    var divElement = document.getElementById('viz1595529554451');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    function getWidth() {
+      return Math.max(
+        document.documentElement.clientWidth
+      );
+    }
+
+    function getHeight() {
+      return Math.max(
+        document.documentElement.clientHeight
+      );
+    }
+    vizElement.style.width=Math.round(0.95*getWidth())+'px';
+    vizElement.style.height=Math.round(0.95*getHeight())+'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+<!-- Combined Labor Snapshot -->
+  <div class='w3-container w3-light-grey' style='padding:128px 16px' id='viz1595529687495' style='position: relative'>
+    <div class="bodyTextTitle">
+          <h3>Working hard, or hardly working?</h3>
+    </div>
+    <div class="bodyText">
+      <h5><strong>What it is:</strong></h5>
+      <p>The national unemployment rate reflects the number of unemployed people as a percentage of labor force. The labor force participation rate measures the number of people in the labor force as a percentage of civilian non-institutionalized population 16 years old and over. In other words, it is the percentage of the population either working or actively seeking work.</p>
+      <br>
+      <h5><strong>Why it matters:</strong></h5>
+      <p>The unemployment rate has been steadily decreasing, as has the labor participation rate. Usually, these two statistics are inversely proportional, just as they are in some of the chosen competitor regions. Policy solutions can work to attract new labor and/or engage labor that has the self-selected out of the workforce.</p>
+      <br>
+    </div>
+
+      <noscript>
+        <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;CombinedLaborSnapshot&#47;1_rss.png' style='border: none' /></a>
+      </noscript>
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='AnnArborBenchmarking&#47;CombinedLaborSnapshot' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;CombinedLaborSnapshot&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en' />
+    </object>
+      <span class="w3-medium">
+      <p><a href="./#viz1595529725241" class="w3-button w3-black">NEXT CHART &gt; Labor Market Trends</a></p>
+  </div>
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1595529687495');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    function getWidth() {
+      return Math.max(
+        document.documentElement.clientWidth
+      );
+    }
+
+    function getHeight() {
+      return Math.max(
+        document.documentElement.clientHeight
+      );
+    }
+    vizElement.style.width=Math.round(0.95*getWidth())+'px';
+    vizElement.style.height=Math.round(0.95*getHeight())+'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+
+<!-- Labor Market Summary -->
+<!-- taking this viz out... everything is accounted for in the scatterplot
+  <div class='w3-container w3-light-grey' style='padding:128px 16px' id='viz1595529707442' style='position: relative'>
+      <noscript>
+        <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;LaborMarketSummary&#47;1_rss.png' style='border: none' /></a>
+      </noscript>
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AnnArborBenchmarking&#47;LaborMarketSummary' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;LaborMarketSummary&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' />
+      </object>
+      <span class="w3-medium">
+        <br><br><br><br><br>
+        <p></p>
+        <br><br><br><br><br>
+      <p><a href="./#viz1595529725241" class="w3-button w3-black">NEXT CHART &gt; Labor Market Trends</a></p>
+  </div>
+    <script type='text/javascript'>                    var divElement = document.getElementById('viz1595529707442');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='777px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+-->
+<!-- Labor Market Trends -->
+  <div class='w3-container w3-light-grey' style='padding:128px 16px' id='viz1595529725241' style='position: relative'>
+    <div class="bodyTextTitle">
+          <h2>Labor markets, changing like any other market</h2><br>
+    </div>
+    <div class="bodyText">
+      <p>While the previous visualization showed a snapshot of 2018, we can see the trends over the past few years for each labor metric below.</p>
+
+    </div>
+      <noscript>
+        <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;LaborMarketTrends&#47;1_rss.png' style='border: none' /></a>
+      </noscript>
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='AnnArborBenchmarking&#47;LaborMarketTrends' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;LaborMarketTrends&#47;1.png' /> <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en' />
+      </object>
+      <span class="w3-medium">
+        <br><br><br><br><br>
+        <p></p>
+        <br><br><br><br><br>
+        <a href="./" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  </div>
+    <script type='text/javascript'>
+    var divElement = document.getElementById('viz1595529725241');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    function getWidth() {
+      return Math.max(
+        document.documentElement.clientWidth
+      );
+    }
+
+    function getHeight() {
+      return Math.max(
+        document.documentElement.clientHeight
+      );
+    }
+    vizElement.style.width=Math.round(0.95*getWidth())+'px';
+    vizElement.style.height=Math.round(0.95*getHeight())+'px';
+     var scriptElement = document.createElement('script');
+     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+     vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js'></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
