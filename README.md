@@ -1,123 +1,74 @@
-# avinashsc.github.io
+# Benchmarking the Ann Arbor Region
+### Take a look!
+See a video demo of our visualization [here!](https://youtu.be/QU0baCRycrw)
 
-To pull the most recent updates:
-1. go to the place you have the git repository saved with a terminal
-2. `git pull origin master` (or some other branch if you're trying to pull that)
-3. `git checkout master`
-4. `python -m http.server 8000`
-5. use your browser to navigate to `localhost:8000` to see the edits
+To see it for yourself, either follow [the instructions to view locally](https://github.com/avinashsc/AnnArborBenchmarking/blob/master/local_view.md) or simply navigate to the [webpage.](https://avinashsc.github.io/AnnArborBenchmarking/)
 
-when you're done, go back to the master branch (if you weren't already there) by using your terminal with the command git checkout master
 
-### Changing a Tableau viz
-To change out a Tableau viz in our sheet, you'll need to do the following:
-1. Copy the embedding HTML to a blank text editor of your choice
-2. Open the `index.html` file of this repository in a separate text editor window.
-3. Find the visualization you are trying to replace in `index.html`.
+### Contributors
+* Alex West
+* Avinash Chandrasekaran
+* Bethany Keller
+* John Boudreaux
 
-You will see a few different HTML elements regarding the viz in `index.html`.
+### What's in it?
 
-* The header div section
+A comprehensive look at different aspects of Ann Arbor and Washtenaw county for key economic indicators. These would be useful for new businesses looking to move to the region or local policymakers trying to make the region more attractive for outside investment.
 
-sample:
+The visualization is divided into a few key parts, each made by a different contributor.
 
-```
-<div class='w3-container w3-light-grey' style='padding:128px 16px' id='viz1595528313546' style='position: relative'>
-```
+* Net Migration - Avinash Chandrasekaran
+* Driving Industry Employment - Alex West
+* Housing Affordability - Bethany Keller
+* Labor Market - John Boudreaux
 
-* The `noscript` of the tableau viz
 
-sample:
+### Key Users, Tasks and Data
 
-```
-<noscript>
-  <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;Map2&#47;1_rss.png' style='border: none' /></a>
-</noscript>
-```
+Our intended users for the entire infoviz is a rather wide bunch, including:
+* CEO of Ann Arbor SPARK (local economic development nonprofit - Alex’s boss)
+* Young startups growing in the region
+* Companies considering locating in the region
 
-* The supporting text
+Each visualization has a few key tasks that we hope a user can effectively and easily perform with the data for the infoviz. We list these below as both tasks in [Tamara Munzner's](https://www.cs.ubc.ca/~tmm/) framework from *Visualization Analysis and Design* and also as questions that we hope our key users above would be able to answer.
 
-sample:
+* Net Migration
+  * **Data**: Population Movement data from US Census Flowmapper
+  * **Main Task**: Present -> Explore -> Summarize Distribution.
+    * _For the five year period 2013-2017, would you consider Washtenaw county, MI to be attractive to outside talent from net migration figures?_
+  * **Other Task**: Present -> Locate -> Identify Trend
+    * _Is the net migration in Washtenaw county, MI improving over time?_
+  * **Other Task**: Present -> Browse -> Identify Outliers
+    * _Which county has the best level of intrastate differential movement during 2013-2017?_
+  * **Insights**: Washtenaw county is attractive to outside talent
+    * Ann Arbor region sees consistent uptick in net migration pattern over a few years
+* Driving Industry Employment
+  * **Data**: Employment percentage in specific industry sectors
+  * **Main Task**: Present -> Explore -> Summarize Distribution.
+    * _What is the metric “driving industry employment” measuring, and would you consider Washtenaw county to have a lot of it?_
+  * **Other Task**: Present -> Locate -> Identify Trend.
+    * _Is the level of driving industry employment in Washtenaw county improving over time?_
+  * **Other Task**: Present -> Browse -> Identify Outliers.
+    * _Which county has the best level of driving industry employment in 2017?_
+  * **Insights**: Washtenaw County is in the bottom third of the pack on Driving Industry Employment - but performs higher than the US average.
+* Housing Affordability
+  * **Data**: Median home sale price per year, median income per year.
+  * **Main Task**: Present -> Explore -> Summarize Distribution.
+    * _Would you consider Washtenaw County, MI affordable when it comes to housing?_
+  * **Other Task**: Present -> Locate -> Identify Trend.
+    * _Is housing affordability in Washtenaw County, MI improving over time?_
+  * **Other Task**: Present -> Browse -> Identify Outliers.
+    * _Which county is the most affordable in 2018?_
+* Labor Market
+  * **Data**: Labor Force Participation Rate, Unemployment rate per county per year
+  * **Main Task**: Present -> Explore -> Summarize Distribution.
+    * _How does Washtenaw county rank among its peers as of 2018 for labor market competitiveness?_
+  * **Other Task**: Present -> Locate -> Compare Trends.
+    * _Is the labor force participation stable over the past 4 years for Washtenaw county compared to its peers?_
+  * **Other Task**: Present -> Locate -> Compare Trends.
+    * _Is the unemployment rate changing for Washtenaw county more, less, or on par compared to peer counties?_
+  * **Insights**: Washtenaw County is middle of the pack for Labor Market with oddities around labor force participation
 
-```
-<h3>A city, its county, and its competition</h3><br>
-<p>Ann Arbor, MI is in Washtenaw county. All metrics are compared at the county level.<br><br>
-Many of the selected regions were chosen due to their inclusion in anecdotal comparisons to the Ann Arbor region. Austin, TX is a perfect example.
-There are many similarities to Ann Arbor, but when comparing available services and city policy, it is helpful to remember that Austin (Travis county) is eight times larger than Ann Arbor. Where possible, the data have been normalized for population.</p>
-<br>
 
-```
 
-* The body of the viz
-
-sample:
-
-```
-<object class='tableauViz'  style='display:none;'>
-  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-  <param name='embed_code_version' value='3' />
-  <param name='site_root' value='' />
-  <param name='name' value='AnnArborBenchmarking&#47;Map2' />
-  <param name='tabs' value='no' />
-  <param name='toolbar' value='yes' />
-  <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnnArborBenchmarking&#47;Map2&#47;1.png' />
-  <param name='animate_transition' value='yes' />
-  <param name='display_static_image' value='yes' />
-  <param name='display_spinner' value='yes' />
-  <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object>
-<span class="w3-medium">
-```
-
-* The next button
-
-sample:
-
-```
-<p><a href="./#viz1595528617697" class="w3-button w3-black">NEXT CHART &gt; Population Movement Summary</a></p>
-```
-
-* The JS script
-
-sample:
-
-```
-<script type='text/javascript'>
-  var divElement = document.getElementById('viz1595528313546');
-  var vizElement = divElement.getElementsByTagName('object')[0];
-  function getWidth() {
-    return Math.max(
-      document.documentElement.clientWidth
-    );
-  }
-
-  function getHeight() {
-    return Math.max(
-      document.documentElement.clientHeight
-    );
-  }
-  vizElement.style.width=Math.round(0.8*getWidth())+'px';
-  vizElement.style.height=Math.round(0.8*getHeight())+'px';
-  var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
-</script>
-```
-
-4. Copy the `noscript` section of the new visualization and replace in `index.html`
-
-5. Copy the body portion of the new visualization and replace in `index.html`
-
-6. Copy the new viz ID from the header div section (something like `<div class='tableauPlaceholder' id='viz1595819305032'`) and put in the new id tag in the following places:
-* the first line of the JS script portion of the viz
-* the id of the header div
-* the next button for the previous visualization in `index.html` (this makes sure that the button brings you down to the new visualization from above)
-
-7. Make sure you test any changes locally before pushing to master!!! This could mess up our visualization, so double check :)
-
-8. **Only after debugging locally** add your changes to be staged for a commit using `git add .`
-
-9. commit your changes to `git commit -m "my awesome changes go in this message"`
-
-10. push your changes using `git push origin master` (assumes you were working on master branch)
-
-This will push all the changes automatically to out website at https://avinashsc.github.io/
+  Enjoy!
